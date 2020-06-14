@@ -1,0 +1,30 @@
+server:
+  port: 9080
+ 
+
+spring:
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver 
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+    password: manager
+    
+    jpa: 
+     hibernate:
+      ddl-auto: update  
+      
+     dialect: org.hibernate.dialect.OracleDialect
+     show-sql: true  
+  jpa:
+    generate-ddl: true
+ 
+  security:
+    user:
+      name: siri
+      password: siri
+
+    
